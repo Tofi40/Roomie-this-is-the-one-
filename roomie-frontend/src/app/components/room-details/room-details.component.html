@@ -1,0 +1,23 @@
+<section class="page" *ngIf="!isLoading && room">
+  <h2>{{ room.title }}</h2>
+  <p class="city">{{ room.city }}</p>
+
+  <div class="meta">
+    <span class="price">DKK {{ room.price }}/month</span>
+    <span class="size">{{ room.squareMeters }} m²</span>
+    <span class="availability">Move-in date: {{ room.availabilityDate | date }}</span>
+  </div>
+
+  <p class="address">Address: {{ room.address }}</p>
+  <p class="description">{{ room.description }}</p>
+
+  <section class="photos" *ngIf="photos.length > 0">
+    <h3>Photos</h3>
+    <div class="photo-grid">
+      <img *ngFor="let photo of photos" [src]="photo.url" [alt]="room.title" />
+    </div>
+  </section>
+</section>
+
+<p *ngIf="isLoading" class="info">Loading room details...</p>
+<p *ngIf="!isLoading && errorMessage" class="error">{{ errorMessage }}</p>

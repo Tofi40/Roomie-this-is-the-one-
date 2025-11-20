@@ -1,0 +1,23 @@
+<section class="page">
+  <h2>Available rooms</h2>
+
+  <p *ngIf="isLoading" class="info">Loading rooms...</p>
+  <p *ngIf="!isLoading && rooms.length === 0" class="info">No rooms available right now.</p>
+  <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+
+  <div class="room-grid">
+    <article class="room-card" *ngFor="let room of rooms">
+      <header>
+        <h3>{{ room.title }}</h3>
+        <p class="city">{{ room.city }}</p>
+      </header>
+      <div class="meta">
+        <span class="price">DKK {{ room.price }}/month</span>
+        <span class="size">{{ room.squareMeters }} m²</span>
+      </div>
+      <p class="availability">Move-in date: {{ room.availabilityDate | date }}</p>
+      <p class="description">{{ room.description }}</p>
+      <a [routerLink]="['/rooms', room.id]" class="btn">View details</a>
+    </article>
+  </div>
+</section>
