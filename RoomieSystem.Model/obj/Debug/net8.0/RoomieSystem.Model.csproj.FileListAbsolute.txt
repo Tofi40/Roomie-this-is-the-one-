@@ -1,0 +1,12 @@
+/Users/kaspertoft/Downloads/roomie_teacher_style/RoomieSystem.Model/bin/Debug/net8.0/RoomieSystem.Model.deps.json
+/Users/kaspertoft/Downloads/roomie_teacher_style/RoomieSystem.Model/bin/Debug/net8.0/RoomieSystem.Model.dll
+/Users/kaspertoft/Downloads/roomie_teacher_style/RoomieSystem.Model/bin/Debug/net8.0/RoomieSystem.Model.pdb
+/Users/kaspertoft/Downloads/roomie_teacher_style/RoomieSystem.Model/obj/Debug/net8.0/RoomieSystem.Model.csproj.AssemblyReference.cache
+/Users/kaspertoft/Downloads/roomie_teacher_style/RoomieSystem.Model/obj/Debug/net8.0/RoomieSystem.Model.GeneratedMSBuildEditorConfig.editorconfig
+/Users/kaspertoft/Downloads/roomie_teacher_style/RoomieSystem.Model/obj/Debug/net8.0/RoomieSystem.Model.AssemblyInfoInputs.cache
+/Users/kaspertoft/Downloads/roomie_teacher_style/RoomieSystem.Model/obj/Debug/net8.0/RoomieSystem.Model.AssemblyInfo.cs
+/Users/kaspertoft/Downloads/roomie_teacher_style/RoomieSystem.Model/obj/Debug/net8.0/RoomieSystem.Model.csproj.CoreCompileInputs.cache
+/Users/kaspertoft/Downloads/roomie_teacher_style/RoomieSystem.Model/obj/Debug/net8.0/RoomieSystem.Model.dll
+/Users/kaspertoft/Downloads/roomie_teacher_style/RoomieSystem.Model/obj/Debug/net8.0/refint/RoomieSystem.Model.dll
+/Users/kaspertoft/Downloads/roomie_teacher_style/RoomieSystem.Model/obj/Debug/net8.0/RoomieSystem.Model.pdb
+/Users/kaspertoft/Downloads/roomie_teacher_style/RoomieSystem.Model/obj/Debug/net8.0/ref/RoomieSystem.Model.dll

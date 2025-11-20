@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/RoomieSystem.API.props" />
+</Project>

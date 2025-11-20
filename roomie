@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomieSystem.API", "RoomieSystem.API\RoomieSystem.API.csproj", "{AEEF9BC0-CA17-A08A-EBA6-7F102862504A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RoomieSystem.Model", "RoomieSystem.Model\RoomieSystem.Model.csproj", "{A4E8D62D-5848-BA9D-1B9E-1AD8534FFED3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEEF9BC0-CA17-A08A-EBA6-7F102862504A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEEF9BC0-CA17-A08A-EBA6-7F102862504A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEEF9BC0-CA17-A08A-EBA6-7F102862504A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEEF9BC0-CA17-A08A-EBA6-7F102862504A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E8D62D-5848-BA9D-1B9E-1AD8534FFED3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E8D62D-5848-BA9D-1B9E-1AD8534FFED3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E8D62D-5848-BA9D-1B9E-1AD8534FFED3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E8D62D-5848-BA9D-1B9E-1AD8534FFED3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12BB973E-6BB6-42A3-9F37-FA857132E647}
+	EndGlobalSection
+EndGlobal
