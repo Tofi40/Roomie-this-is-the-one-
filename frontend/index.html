@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roomie Swipe</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="app-header">
+    <div>
+      <h1>Roomie Swipe</h1>
+      <p class="subtitle">Discover rooms, match, and chat with roommates.</p>
+    </div>
+    <div class="header-actions">
+      <label class="user-label">
+        Active user ID
+        <input id="userIdInput" type="number" min="1" value="1" />
+      </label>
+      <button id="reloadButton" class="ghost">Reload data</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="column auth">
+      <h2>Join or sign in</h2>
+      <form id="registerForm" class="panel">
+        <div class="field">
+          <label>First name</label>
+          <input name="firstName" required />
+        </div>
+        <div class="field">
+          <label>Last name</label>
+          <input name="lastName" required />
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input name="email" type="email" required />
+        </div>
+        <div class="field">
+          <label>Phone</label>
+          <input name="phone" type="tel" />
+        </div>
+        <div class="field">
+          <label>Birth date</label>
+          <input name="birthDate" type="date" />
+        </div>
+        <div class="field">
+          <label>Bio</label>
+          <textarea name="bio" rows="2" placeholder="Tell roommates about yourself"></textarea>
+        </div>
+        <button type="submit">Create account</button>
+      </form>
+
+      <form id="loginForm" class="panel">
+        <h3>Already have an account?</h3>
+        <div class="field">
+          <label>Email</label>
+          <input id="loginEmail" type="email" placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label>User ID</label>
+          <input id="loginUserId" type="number" min="1" placeholder="or enter your numeric id" />
+        </div>
+        <button type="submit" class="ghost">Log in</button>
+      </form>
+
+      <div class="status" id="status">Loading rooms…</div>
+    </section>
+
+    <section class="column swipe">
+      <h2>Swipe rooms</h2>
+      <section class="card-stage">
+        <div id="cardStack" class="card-stack"></div>
+        <div id="emptyState" class="empty-state hidden">
+          <h2>You're all caught up</h2>
+          <p>Come back later for more rooms.</p>
+          <button id="resetButton">Reset</button>
+        </div>
+      </section>
+
+      <div class="actions">
+        <button id="skipButton" class="skip">✖ Skip</button>
+        <button id="likeButton" class="like">❤ Like</button>
+      </div>
+    </section>
+
+    <section class="column matches">
+      <h2>Matches & Messages</h2>
+      <div class="panel">
+        <h3>Matches</h3>
+        <ul id="matchesList" class="matches-list"></ul>
+      </div>
+
+      <div class="panel chat">
+        <div class="chat-header">
+          <div>
+            <div class="muted">Current conversation</div>
+            <div id="activeMatchTitle" class="chat-title">None selected</div>
+          </div>
+        </div>
+        <ul id="messagesList" class="messages-list"></ul>
+        <form id="messageForm" class="message-form">
+          <input id="messageInput" placeholder="Write a message" />
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
