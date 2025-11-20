@@ -1,0 +1,70 @@
+.page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h2 {
+  margin-bottom: 0.25rem;
+}
+
+.city {
+  color: #64748b;
+  margin-top: 0;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-weight: 600;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.price {
+  color: #2563eb;
+}
+
+.size {
+  color: #0f172a;
+}
+
+.availability {
+  color: #1d4ed8;
+}
+
+.address {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+.photos h3 {
+  margin-top: 0;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.info {
+  color: #475569;
+}
+
+.error {
+  color: #dc2626;
+  font-weight: 600;
+}
